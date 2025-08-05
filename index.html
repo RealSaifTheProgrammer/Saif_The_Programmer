@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Q7kD3k1w6ZvXfsS4v",
+        });
+      })();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa:wght@400;700&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/My logo image.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Saif The Programmer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Meta Tags -->
+    <title>Saif The Programmer | Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Saif The Programmer - Frontend web developer portfolio showcasing my projects, coding journey, and expertise in modern web technologies."
+    />
+    <meta
+      name="keywords"
+      content="Saif, Saif The Programmer, web developer, frontend developer, JavaScript, portfolio, coding projects"
+    />
+    <meta name="author" content="Saif The Programmer" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Saif The Programmer | Web Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Explore my web development projects, coding journey, and skills in building modern, responsive websites."
+    />
+    <!-------------------------------Still----------------------------------->
+    <!-- <meta
+      property="og:image"
+      content="https://yourdomain.com/preview-image.jpg"
+    />
+    <meta property="og:url" content="https://yourdomain.com" /> -->
+    <meta property="og:type" content="website" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Saif The Programmer | Web Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Check out my portfolio, coding projects, and development journey."
+    />
+    <!------------still------------>
+    <!-- <meta
+      name="twitter:image"
+      content="https://yourdomain.com/preview-image.jpg"
+    /> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/logotest2.png" alt="Logo" />
+        </div>
+        <ul class="nav-menu">
+          <li><a data-key="nav_home" href="#home">Home</a></li>
+          <li><a data-key="nav_about" href="#about">About</a></li>
+          <li><a data-key="nav_portfolio" href="#portfolio">Portfolio</a></li>
+          <li>
+            <a data-key="nav_experience" href="#experience">Experience</a>
+          </li>
+          <li><a data-key="nav_skills" href="#skills">Skills</a></li>
+          <li><a data-key="nav_contact" href="#contact">Contact</a></li>
+          <button id="lang-toggle" class="lang-switcher">العربية</button>
+        </ul>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <h1 data-key="about_heading">My name is Saif</h1>
+          <h2>Front-End Developer</h2>
+          <p data-key="hero_intro">
+            Crafting responsive and interactive web experiences using any
+            technologies!
+          </p>
+          <div class="cta-buttons">
+            <a data-key="view_work" href="#portfolio" class="btn primary"
+              >View My Work</a
+            >
+            <a data-key="get_in_touch" href="#contact" class="btn secondary"
+              >Get In Touch</a
+            >
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="images/My image.png"
+            alt="Saif The Programmer - Frontend Developer Portfolio"
+            width="404px"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="container">
+          <h2 data-key="nav_about">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p data-key="about_text">I'm just a programmer with...</p>
+            </div>
+            <div class="about-stats">
+              <div class="stat">
+                <h3 data-key="about_stats1">
+                  5+ years of growth through trials, errors, and breakthroughs
+                  in the world of web development 🕒
+                </h3>
+              </div>
+              <div class="stat">
+                <h3 data-key="about_stats2">1+ Projects Completed 📂</h3>
+              </div>
+              <div class="stat">
+                <h3 data-key="about_stats3">0+ Happy Clients 😊</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <h2 data-key="nav_portfolio">My Portfolio</h2>
+          <div class="portfolio-filter"></div>
+          <div class="portfolio-grid">
+            <p data-key="portfolio_text">
+              Well...this portfolio is my first
+              <span style="color: red">real</span> project
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 data-key="nav_experience">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date" data-key="experience_item1">
+                2020 - Present as a Front-end Developer
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 data-key="nav_skills">Skills & Technologies</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Backend</h3>
+              <ul>
+                <li data-key="skills_still">Still</li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Others</h3>
+              <ul>
+                <li data-key="skills_still">Still</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 data-key="contact_heading_main">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3 data-key="contact_heading">Let's Work Together</h3>
+              <p data-key="contact_desc">
+                Let’s build great digital experiences together. I’m always open
+                to exciting front-end projects, whether it’s building responsive
+                interfaces, enhancing user experience, or collaborating with
+                creative teams. If you have an idea or a project in mind, let’s
+                connect and make it happen!
+              </p>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <h4 data-key="contact_email">Email</h4>
+                  <p>saiftheprogrammer@gmail.com</p>
+                </div>
+                <div class="contact-item"></div>
+              </div>
+              <div class="social-links">
+                <a
+                  href="https://www.linkedin.com/in/saif-the-programmer-974b22374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+                <a
+                  href="https://github.com/RealSaifTheProgrammer"
+                  class="social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    data-placeholder="placeholder_name"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    data-placeholder="placeholder_email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    data-placeholder="placeholder_subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    name="message"
+                    id="message"
+                    data-placeholder="placeholder_message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="button"
+                  class="btn primary"
+                  onclick="sendToGmail()"
+                  data-key="send_message"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p data-key="footer_text">
+          &copy; 2025 SaifTheProgrammer. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
