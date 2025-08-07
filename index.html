@@ -62,6 +62,7 @@
       name="twitter:image"
       content="https://saif-the-programmer.vercel.app/"
     />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <header>
@@ -232,7 +233,7 @@
               </div>
             </div>
             <div class="contact-form">
-              <form id="contactForm">
+              <form id="contactForm" >
                 <div class="form-group">
                   <input
                     type="text"
@@ -269,11 +270,14 @@
                     required
                   ></textarea>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LedCZ4rAAAAAM3X4pHLYCAu4MPGI_L3a1_mXEhS" data-callback="onRecaptchaSuccess"></div>
                 <button
                   type="button"
                   class="btn primary"
                   onclick="sendToGmail()"
                   data-key="send_message"
+                  disabled
+                  id="submitBtn"
                 >
                   Send Message
                 </button>
@@ -294,4 +298,5 @@
     <script src="main.js"></script>
   </body>
 </html>
+
 
