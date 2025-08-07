@@ -17,6 +17,10 @@ document.querySelectorAll(".nav-menu a, .cta-buttons a").forEach((anchor) => {
   });
 });
 
+function onRecaptchaSuccess() {
+    document.getElementById("submitBtn").disabled = false;
+  }
+
 function sendToGmail() {
   const name = document.getElementById("name")?.value.trim();
   const email = document.getElementById("email")?.value.trim();
@@ -95,6 +99,7 @@ function sendToGmail() {
         confirmButtonColor: "var(--coral)",
       });
     });
+    if (document.getElementById("submitBtn").disabled) return;
 }
 
 // Optional: Add these translations to your translations object if they don't exist
@@ -323,3 +328,4 @@ function updateLanguage() {
 }
 // Update language on initial load
 updateLanguage();
+
