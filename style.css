@@ -1026,3 +1026,8 @@ footer p {
     padding: 1.5rem;
   }
 }
+
+button#submitBtn {
+    margin: 20px 0;
+}
+
