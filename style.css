@@ -1223,6 +1223,17 @@ button#submitBtn {
     max-width: 100%;
   }
 }
+.recaptcha-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.recaptcha-container .g-recaptcha {
+  margin: 0;
+}
+
 
 
 
