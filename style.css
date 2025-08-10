@@ -329,7 +329,7 @@ main {
 .cta-buttons {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
@@ -746,7 +746,7 @@ body[dir="rtl"] .skill-category li::before {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-top: 3rem;
-  justify-items: center;
+  justify-items: stretch;
 }
 
 .contact-info h3 {
@@ -1233,6 +1233,7 @@ button#submitBtn {
 .recaptcha-container .g-recaptcha {
   margin: 0;
 }
+
 
 
 
