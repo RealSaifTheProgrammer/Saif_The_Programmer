@@ -32,6 +32,7 @@ body {
   color: var(--text-dark);
   background-color: var(--white);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body[dir="rtl"] {
@@ -284,7 +285,7 @@ main {
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 1rem;
@@ -312,7 +313,7 @@ main {
 }
 
 .hero-content h2 {
-  font-size: 2rem;
+  font-size: clamp(1.2rem, 3vw, 2rem);
   font-weight: 500;
   color: var(--text-light);
   margin-bottom: 1.5rem;
@@ -400,7 +401,7 @@ main {
 
 .about h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3rem;
@@ -481,7 +482,7 @@ main {
 
 .portfolio h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3rem;
@@ -522,7 +523,7 @@ main {
 
 .experience h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3rem;
@@ -606,7 +607,7 @@ body[dir="rtl"] .timeline-item::before {
 
 .skills h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3rem;
@@ -721,7 +722,7 @@ body[dir="rtl"] .skill-category li::before {
 
 .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--text-dark);
   margin-bottom: 3rem;
@@ -1029,6 +1030,160 @@ footer p {
 
 button#submitBtn {
     margin-top: 10px;
+}
+
+/* Enhanced Mobile Responsiveness */
+
+/* For devices like Oppo Reno 2F and similar (360px - 414px) */
+@media (max-width: 414px) {
+  .container {
+    padding: 0 10px;
+  }
+  
+  nav {
+    padding: 0 10px;
+  }
+  
+  .logo img {
+    height: 45px;
+  }
+  
+  .hero {
+    padding: 40px 0;
+    min-height: 80vh;
+    gap: 1.5rem;
+  }
+  
+  .hero-content,
+  .hero-image {
+    padding: 0 10px;
+  }
+  
+  .hero-content h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+    line-height: 1.2;
+  }
+  
+  .hero-content h2 {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+  }
+  
+  .hero-content p {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about, .portfolio, .experience, .skills, .contact {
+    padding: 60px 0;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .timeline-item {
+    margin-left: 1rem;
+    padding: 1.2rem;
+  }
+  
+  .timeline-item::before {
+    left: -1rem;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .contact-form {
+    padding: 1.2rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+  
+  .stat,
+  .skill-category {
+    padding: 1.2rem;
+  }
+}
+
+/* For very small devices (320px - 359px) */
+@media (max-width: 359px) {
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav-menu li a {
+    font-size: 0.85rem;
+  }
+  
+  .lang-switcher {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+  
+  .hero {
+    padding: 30px 0;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+  
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+  
+  .stat,
+  .skill-category,
+  .timeline-item,
+  .contact-form {
+    padding: 1rem;
+  }
+  
+  .about-stats {
+    gap: 1rem;
+  }
+  
+  .skills-grid {
+    gap: 1rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Touch-friendly improvements for mobile */
+@media (max-width: 768px) {
+  .btn,
+  .social-link,
+  .nav-menu li a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    min-height: 44px;
+  }
+  
+  .nav-menu li a {
+    padding: 0.8rem 0;
+  }
 }
 
 
