@@ -741,11 +741,12 @@ body[dir="rtl"] .skill-category li::before {
   border-radius: 2px;
 }
 
-.contact-content {
+.contact-content { 
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin-top: 3rem;
+  justify-items: center;
 }
 
 .contact-info h3 {
@@ -1185,5 +1186,43 @@ button#submitBtn {
     padding: 0.8rem 0;
   }
 }
+
+/* Center the contact form on mobile */
+@media (max-width: 768px) {
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .contact-info,
+  .contact-form {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-form {
+    margin: 0 auto;
+  }
+}
+
+/* Extra centering for very small screens */
+@media (max-width: 414px) {
+  .contact {
+    padding: 60px 10px;
+  }
+  
+  .contact-content {
+    gap: 2rem;
+    padding: 0 5px;
+  }
+  
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+  }
+}
+
 
 
